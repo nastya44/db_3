@@ -43,14 +43,14 @@ class Games(db.Model):
 db.create_all()
 
 
-valve = Publisher(name = "Valve", adress = "America", popularity = 100)
-steam = Store(name = "Steam", income = 10000, amount = 254532, parent = "Valve")
-dota2 = Games(id= 2, name ="Dota", price = 0, publisher = "Valve", store = "Steam", rating = 10)
+#valve = Publisher(name = "Valve", adress = "America", popularity = 100)
+#steam = Store(name = "Steam", income = 10000, amount = 254532, parent = "Valve")
+#dota2 = Games(id= 2, name ="Dota", price = 0, publisher = "Valve", store = "Steam", rating = 10)
 
-db.session.add(valve)
-db.session.add(steam)
-db.session.add(dota2)
-db.session.commit()
+#db.session.add(valve)
+#db.session.add(steam)
+#db.session.add(dota2)
+#db.session.commit()
 
 @app.route('/<table>/', methods=['post'])
 def add(table):
